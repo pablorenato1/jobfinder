@@ -1,0 +1,37 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "sequelize": "^6.21.4",
+    "sqlite3": "^5.0.11"
+  },
+  "name": "job_finder",
+  "version": "1.0.0",
+  "description": "This is a site that developers can use to search a job",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pablorenato1/jobfinder.git"
+  },
+  "keywords": [
+    "dev",
+    "jobs",
+    "dev",
+    "oportunity",
+    "search",
+    "job"
+  ],
+  "author": "Pablo Renato",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pablorenato1/jobfinder/issues"
+  },
+  "homepage": "https://github.com/pablorenato1/jobfinder#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
