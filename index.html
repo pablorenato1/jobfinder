@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Finder</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Job Finder</a>
+        <button class="navbar-toggler" type="button", data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-bs-controls="navbarNav" aria-bs-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="class-item">
+              <a class="nav-link" href="index.html">Jobs</a>
+            </li>
+            <li class="class-item">
+              <a class="nav-link btn btn-primary" href="add.html">Post a Job</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div id="top-container" class="container-fluid">
+    <h1 id="main-title" class="text-center">Find the dream job</h1>
+    <p id="main-subtitle" class="text-center">We are a site that offer the best jobs for devs</p>
+    <form id="search-form" class="row g-2" action="">
+      <div class="form-group col-10">
+        <input type="text" class="form-control" id="job" name="job" placeholder="What kind of job you are searching">
+      </div>
+      <div class="col-md-2">
+        <button type="button" class="btn btn-primary">Search</button>
+      </div>
+    </form>
+  </div>
+  <main>
+    <div id="jobs-container" class="container">
+      <div class="row">
+        <div col-md-12>
+          <h2 id="job-list-title">All Jobs offered</h2>
+          <ul id="job-list" class="list-group">
+            <li class="list-group-item new-job">
+              <img src="public/img/company.svg" alt="company">
+              <p>company</p>
+              <h2>Job Title</h2>
+              <p>Salary</p>
+              <span class="new-job-label">New</span>
+              <a class="btn btn-primary">See Jobs</a>
+            </li>
+            <li class="list-group-item new-job">
+              <img src="public/img/company.svg" alt="company">
+              <p>company</p>
+              <h2>Job Title</h2>
+              <p>Salary</p>
+              <span class="new-job-label">New</span>
+              <a class="btn btn-primary">See Jobs</a>
+            </li>
+            <li class="list-group-item">
+              <img src="public/img/company.svg" alt="company">
+              <p>company</p>
+              <h2>Job Title</h2>
+              <p>Salary</p>
+              <a class="btn btn-primary">See Jobs</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+</body>
+</html>
