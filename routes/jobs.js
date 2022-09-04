@@ -8,6 +8,9 @@ router.get('/test', (req, ans) => {
     ans.send('The router works')
 });
 
+router.get('/add',(req, ans) => {
+    ans.render('add')
+})
 
 // add job by post
 router.post('/add', (req, ans)=> {
