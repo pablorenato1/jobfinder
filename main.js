@@ -4,6 +4,8 @@ const express = require('express');
 const path = require('path');
 const db = require('./db/connection');
 const Job = require('./models/Job')
+const Sequelize = require('sequelize');
+const Op = Sequelize.Op;
 
 const app = express();
 
@@ -34,16 +36,32 @@ db.authenticate().then(()=>{
 
 // Routes of sites
 app.get('/', (req, ans) => {
+
+    let search = req.query.job;
+    let query = '%'+search+'%'; // Its just to say to the Sequelize to search attribute similar at what we are searching
+
+    if(!search) {
+        Job.findAll({order: [ // Function from Sequelize return a promisse
+            ['createdAt', 'DESC']
+        ]}).then(jobs => {
     
-    Job.findAll({order: [ // Function from Sequelize
-        ['createdAt', 'DESC']
-    ]}).then(jobs => {
-
-        ans.render('index', {
-            jobs
+            ans.render('index', {
+                jobs
+            });
+        }).catch(err => console.log(err));
+    } else {
+        Job.findAll({
+            where: {title: {[Op.like]: query}},
+            order: [ // Function from Sequelize
+                ['createdAt', 'DESC']
+        ]}).then(jobs => {
+            ans.render('index', {
+                jobs, search
+            });
+    
         });
-
-    })
+    };
+    
 });
 
 // jobs routes
