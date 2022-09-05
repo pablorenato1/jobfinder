@@ -1,37 +1,35 @@
 <div id="add-form-container" >
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12">
-        <h1 class="text-center">Create a job using this form</h1>
-      </div>
-      <div id="form-box" class="col-md-12">
-        <h2>Fill out this form in the best way possible to find a dev more compatible with the job.</h2>
-        <form action="/jobs/add" method="POST">
-          <div class="form-group">
-            <label for="title">Job Title:</label>
-            <input type="text" class="form-control" id="form-control" name="title" placeholder="Job title" required>
-            <smallid id="titleHelp" class="form-text text-muted">The title is very important part of creating a job, be more clear as possible</small>
-          </div>
-          <div class="form-group">
-            <label for="description">Job Description</label>
-            <textarea type="text" class="form-control" id="description" name="description" placeholder="Descibe the better way possible about the Job" required></textarea>
-          </div>
-          <div class="form-group">
-            <label for="company">Company Name:</label>
-            <input type="text" class="form-control" id="company" name="company" placeholder="Which company is opening this Job..." required>
-          </div>
-          <div class="form-group">
-            <label for="email">Email to contact:</label>
-            <input type="text" class="form-control" id="email" name="email" placeholder="Email to Contact" required>
-          </div>
-          <div class="form-group">
-            <label for="Salary">Salary:</label>
-            <input type="text" class="form-control" id="salary" name="salary" placeholder="5000" required>
-          </div>
-          <input type="hidden" name="new_job" value="1">
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-      </div>
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="text-center">Create a job using this form</h1>
+    </div>
+    <div id="form-box" class="col-md-12">
+      <h2>Fill out this form in the best way possible to find a dev more compatible with the job.</h2>
+      <form action="/jobs/add" method="POST">
+        <div class="form-group">
+          <label for="title">Job Title:</label>
+          <input type="text" class="form-control" id="form-control" name="title" placeholder="Job title" required>
+          <smallid id="titleHelp" class="form-text text-muted">The title is very important part of creating a job, be more clear as possible</small>
+        </div>
+        <div class="form-group">
+          <label for="description">Job Description</label>
+          <textarea type="text" class="form-control" id="description" name="description" placeholder="Descibe the better way possible about the Job" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="company">Company Name:</label>
+          <input type="text" class="form-control" id="company" name="company" placeholder="Which company is opening this Job..." required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email to contact:</label>
+          <input type="text" class="form-control" id="email" name="email" placeholder="Email to Contact" required>
+        </div>
+        <div class="form-group">
+          <label for="Salary">Salary:</label>
+          <input type="text" class="form-control" id="salary" name="salary" placeholder="5000" required>
+        </div>
+        <input type="hidden" name="new_job" value="1">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
     </div>
   </div>
 </div>
