@@ -13,7 +13,7 @@
     </p>
     <img src="./public/img/JobFinderHomePage.jpg" alt="HomePage">
     <h2>Home Page in small screens</h2>
-    <p>The whole site also can be used in a smartphone.</p>
+    <p>The site also can be used on a smartphone.</p>
     <img src="./public/img/JobFinderHomePagePhone.jpg" alt="HomePage for small screen">
     <h2>Form Page</h2>
     <img src="./public/img/JobFinderFormPage.jpg" alt="Form Page">
