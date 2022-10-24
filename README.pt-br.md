@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Job Finder
 [![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/pablorenato1/jobfinder/blob/main/README.md)
 ## Informações Básica
@@ -23,7 +23,7 @@
     <h2>Página De Detalhes Da Vaga</h2>
     <img src="./public/img/JobFinderJobDetails.jpg" alt="Detalhes da Vaga">
     
-=======
+
 # Job Finder
 [![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/pablorenato1/jobfinder/blob/main/README.md)
 ## Informações Básica
@@ -48,5 +48,4 @@
     <h2>Página De Detalhes Da Vaga</h2>
     <img src="./public/img/JobFinderJobDetails.jpg" alt="Detalhes da Vaga">
     
->>>>>>> 1362907ad2d0cd143de4321e082b6828b64b78b5
   </div>
