@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
 const db = require('../db/connection');
 
-// definig the attributes from database so javascript can interact with
+// defining the attributes from database so javascript can interact with
 const Job = db.define('job', {
     title: {
         type: Sequelize.STRING,

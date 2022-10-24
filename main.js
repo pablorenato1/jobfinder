@@ -27,9 +27,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 // body parser
 app.use(bodyParser.urlencoded({extended: false}));
 
-// db connection (Promisse)
+// db connection (Promises)
 db.authenticate().then(()=>{
-    console.log("Conected successfully with the database ")
+    console.log("Connected successfully with the database ")
 }).catch(err => {
     console.log("Failed to connect the database", err)
 });
@@ -41,7 +41,7 @@ app.get('/', (req, ans) => {
     let query = '%'+search+'%'; // Its just to say to the Sequelize to search attribute similar at what we are searching
 
     if(!search) {
-        Job.findAll({order: [ // Function from Sequelize return a promisse
+        Job.findAll({order: [ // Function from Sequelize return a promise
             ['createdAt', 'DESC']
         ]}).then(jobs => {
     
